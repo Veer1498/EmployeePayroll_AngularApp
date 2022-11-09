@@ -4,8 +4,8 @@
             EMPLOYEE PAYROLL FORM
         </div>
         <div class="row-content">
-            <label class ="label text" for="name">NAME</label>
-            <input class = "input" type="txt"  name="name" pattern ="[A-Z]{1}[a-zA-Z \\w]{2,}" id="name" placeholder="your Name.." required> 
+            <label class ="label text" for="name">Name</label>
+            <input class = "input" type="txt"  name="name" pattern ="[A-Z]{1}[a-zA-Z \\w]{2,}" id="name" placeholder=" Enter your Name.." required> 
             <label class ="error-output" for="name">*Start With Capital Letter</label>
         </div>
         <div class="row-content">
@@ -68,6 +68,7 @@
         <div class="row-content">
             <label class="label text" for="salary"> Choose Salary </label>
                 <select id="salary" name="salary">
+                    <option >Select Salary</option>
                     <option value="10000">Rs.10000</option>
                     <option value="20000">Rs.20000</option>
                     <option value="30000">Rs.30000</option>
@@ -84,6 +85,7 @@
             <label class="label text" for="startDate">Start Date</label>
             <div id="date">
                 <select id="day" name="Day">
+                    <option>Day</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -117,6 +119,7 @@
                 </select>
 
                 <select id="month" name="Month">
+                    <option>Month</option>
                     <option value="Jan">January</option>
                     <option value="Feb">Febraury</option>
                     <option value="Mar">March</option>
@@ -131,6 +134,7 @@
                     <option value="Dec">December</option>
                     </select>
                     <select id="year" name="Year">
+                        <option>Year</option>
                         <option value="2022">2022</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
