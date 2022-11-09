@@ -74,7 +74,7 @@ label{
     border-radius: 3px;
 }
 .submitButton{
-    background-color: lightgreen;
+    background-color: #ccc;
     margin-right: 30px;
     border-radius: 4%;
 
@@ -83,10 +83,14 @@ label{
     color: white;
     background-color: green;
 }
+.resetButton{
+    background-color: #ccc;
+
+}
 .CancelButton{
     text-decoration: none;
     text-align: center;
-    background-color: lightcoral;
+    background-color:#ccc
 }
 .CancelButton:hover{
     color: white;
