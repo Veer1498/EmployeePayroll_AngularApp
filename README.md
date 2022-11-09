@@ -1,8 +1,9 @@
 # EmployeePayroll_AngularApp
-Ability to create Front-End for Employee Payroll Application  It Consists of Both Home and Input Form Page
+Ability to create Front-End for Employee Payroll Application  
+It Consists of Both Home and Input Form Page
 
 
-#This project was generated with Angular CLI version 14.2.7.
+# This project was generated with Angular CLI version 14.2.7.
 
 Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
