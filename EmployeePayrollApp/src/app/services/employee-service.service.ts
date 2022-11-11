@@ -9,6 +9,6 @@ export class EmployeeServiceService {
   constructor(private http:HttpClient) { }
 
   insertEmployee(employee : any){
-    return this.http.post("http://localhost:8083/employee/insert",employee);
+    return this.http.post("http://localhost:8083/employeepayrollservice/create",employee);
   }
 }

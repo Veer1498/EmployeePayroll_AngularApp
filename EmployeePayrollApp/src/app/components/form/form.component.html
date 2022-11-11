@@ -71,7 +71,7 @@
             <div *ngFor="let departName of depart2,let i = index ">
                 <input type="checkbox" id="department" name="department" [value]="this.
                 employee.department[i]" (change)="checkBoxChange(departName)" (ngModel)="departName" 
-                    [ngModelOptions]="{standalone: true}" ngDefaultControl> {{departName}} >
+                    [ngModelOptions]="{standalone: true}" ngDefaultControl> {{departName}} 
             </div>
         </div>
 
