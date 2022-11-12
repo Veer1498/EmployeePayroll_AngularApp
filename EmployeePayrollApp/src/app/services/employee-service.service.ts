@@ -11,4 +11,7 @@ export class EmployeeServiceService {
   insertEmployee(employee : any){
     return this.http.post("http://localhost:8083/employeepayrollservice/create",employee);
   }
+  getEmployee(){
+    return this.http.get("http://localhost:8083/employeepayrollservice/getAll")
+  }
 }

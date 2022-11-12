@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Employee1 } from 'src/app/model/employeeModel';
+import { EmployeeServiceService } from 'src/app/services/employee-service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(
+    private router:Router,
+    private service:EmployeeServiceService
+  ) { }
+  list:Employee1[] = [];
   ngOnInit(): void {
+    
+    this.service.getEmployee().subscribe(x =>{
+      console.log(x);
+      // this.list = x;
+      // this.empList = x;
+    });
+    
   }
 
 }
