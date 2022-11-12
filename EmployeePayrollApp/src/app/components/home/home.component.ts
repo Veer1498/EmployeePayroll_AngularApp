@@ -24,7 +24,15 @@ export class HomeComponent implements OnInit {
       console.log(data);
       this.list= data.data;
     });
-    
+   
   }
+  onDelete(id : Number){
+    console.log(id);
+    this.service.deleteEmployeeById(id).subscribe((data:any) =>{
+      console.log(data);
+      this.ngOnInit();
+    })
+  }
+  
 
 }

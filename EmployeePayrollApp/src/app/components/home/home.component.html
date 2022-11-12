@@ -3,7 +3,7 @@
     <div class="header-content">
     <div class="emp-details-text">
         Employee Details
-        <div class="emp-count">0</div>
+        <div class="emp-count">{{list.length}}</div>
     </div>
     <img id="search" src="../../../assets/icons/search.svg" alt="search">
     <a routerLink="form" class="add-button">
@@ -34,7 +34,8 @@
             <td>{{employee.startDate | date: 'dd MMM yyyy'}}</td>
             <td>
                 <img src="../assets/icons/delete-black-18dp.svg"
-                 alt="delete">
+                id={{employee.employeeId}}
+                 alt="delete" (click)="onDelete(employee.employeeId)">
                 <img src="../assets/icons/create-black-18dp.svg" alt="edit">   
             </td>
         </tr>
