@@ -15,13 +15,14 @@ export class HomeComponent implements OnInit {
     private router:Router,
     private service:EmployeeServiceService
   ) { }
-  list:Employee1[] = [];
+
+  list:any;
+
   ngOnInit(): void {
     
-    this.service.getEmployee().subscribe(x =>{
-      console.log(x);
-      // this.list = x;
-      // this.empList = x;
+    this.service.getEmployee().subscribe((data:any) =>{
+      console.log(data);
+      this.list= data.data;
     });
     
   }
