@@ -16,9 +16,6 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // employee:Employee1[]=[
-  //   new Employee1("",0,"",new Date, "", "",[])
-  // ]
   employee:Employee1=new Employee1("",0,"",new Date, "", "",[])
 
   onSubmit(){
